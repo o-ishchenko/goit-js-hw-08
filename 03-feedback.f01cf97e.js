@@ -4,4 +4,4 @@ var t=arguments[3],n="Expected a function",e=NaN,i="[object Symbol]",r=/^\s+|\s+
 },{}],"TTyb":[function(require,module,exports) {
 "use strict";var e=t(require("lodash.throttle"));function t(e){return e&&e.__esModule?e:{default:e}}const a=document.querySelector(".feedback-form"),r=document.querySelector(".feedback-form input"),o=document.querySelector(".feedback-form textarea"),c={};function n(e){e.preventDefault();const t=JSON.parse(localStorage.getItem("feedback-form-state"));console.log(t),e.currentTarget.reset(),localStorage.removeItem("feedback-form-state")}function u(e){c[e.target.name]=e.target.value,localStorage.setItem("feedback-form-state",JSON.stringify(c))}function l(){const e=JSON.parse(localStorage.getItem("feedback-form-state"));e&&(r.value=e.email,o.value=e.message)}a.addEventListener("input",(0,e.default)(u,500)),a.addEventListener("submit",n),l();
 },{"lodash.throttle":"FNyO"}]},{},["TTyb"], null)
-//# sourceMappingURL=/parcel-project-template/03-feedback.f01cf97e.js.map
+//# sourceMappingURL=/goit-js-hw-08/03-feedback.f01cf97e.js.map
