@@ -26,8 +26,10 @@ function onFormInput(event) {
 function setSavesData() {
   const savedData = JSON.parse(localStorage.getItem('feedback-form-state'));
 
-    if (savedData) {
+    if (savedData.email) {
         inputEl.value = savedData.email;
+  };
+     if (savedData.message) {
         textareaEl.value = savedData.message;
-      }
+  };
 }
